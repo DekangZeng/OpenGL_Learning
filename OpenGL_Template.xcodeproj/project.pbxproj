@@ -174,6 +174,7 @@
 		D9D2DB682792E09800635C83 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D9D2DB732792E19800635C83 /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
 		D9D2DB742792E1AE00635C83 /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		D9D2DB75279530D300635C83 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		D9F97C8F278C7699004BF785 /* OpenGL_Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_Template; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F97C92278C7699004BF785 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D9F97C9A278C7966004BF785 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -311,6 +312,7 @@
 				D9D2DB682792E09800635C83 /* main.cpp */,
 				D9D2DB732792E19800635C83 /* shader.vs */,
 				D9D2DB742792E1AE00635C83 /* shader.fs */,
+				D9D2DB75279530D300635C83 /* Camera.h */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
