@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AE832C27998E3B00B93D27 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9AE832B27998E3B00B93D27 /* main.cpp */; };
+		D9AE833027998E4600B93D27 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F97C9A278C7966004BF785 /* OpenGL.framework */; };
+		D9AE833127998E8300B93D27 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F97C9E278C7D86004BF785 /* libglfw.3.3.dylib */; };
+		D9AE833227998E8700B93D27 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = D9F97CA0278C7DB1004BF785 /* glad.c */; };
+		D9AE833327998EFD00B93D27 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9D2DB13278FFEAF00635C83 /* Shader.cpp */; };
+		D9AE833427998F0400B93D27 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = D9D2DB75279530D300635C83 /* Camera.h */; };
 		D9D2DAF1278F21A800635C83 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = D9D2DAF0278F21A800635C83 /* glad.c */; };
 		D9D2DAF2278F22E400635C83 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F97C9A278C7966004BF785 /* OpenGL.framework */; };
 		D9D2DAF3278F234200635C83 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F97C9E278C7D86004BF785 /* libglfw.3.3.dylib */; };
@@ -60,6 +66,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D9AE832727998E3B00B93D27 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D9D2DAE6278F213400635C83 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +172,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D9AE832927998E3B00B93D27 /* BasicLighting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BasicLighting; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AE832B27998E3B00B93D27 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D9AE833527998F2200B93D27 /* shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fs; sourceTree = "<group>"; };
+		D9AE833627998F3800B93D27 /* shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vs; sourceTree = "<group>"; };
+		D9AE833727998F4C00B93D27 /* lightshader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightshader.fs; sourceTree = "<group>"; };
+		D9AE833827998F5A00B93D27 /* lightshader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = lightshader.vs; sourceTree = "<group>"; };
+		D9AE83392799B5BE00B93D27 /* gshader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = gshader.vs; sourceTree = "<group>"; };
+		D9AE833A2799B5CD00B93D27 /* gshader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = gshader.fs; sourceTree = "<group>"; };
 		D9D2DAE8278F213400635C83 /* triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = triangle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D2DAF0278F21A800635C83 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		D9D2DAFF278FF22900635C83 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
@@ -202,6 +225,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D9AE832627998E3B00B93D27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AE833127998E8300B93D27 /* libglfw.3.3.dylib in Frameworks */,
+				D9AE833027998E4600B93D27 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9D2DAE5278F213400635C83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +309,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9AE832A27998E3B00B93D27 /* BasicLighting */ = {
+			isa = PBXGroup;
+			children = (
+				D9AE832B27998E3B00B93D27 /* main.cpp */,
+				D9AE833627998F3800B93D27 /* shader.vs */,
+				D9AE833527998F2200B93D27 /* shader.fs */,
+				D9AE833827998F5A00B93D27 /* lightshader.vs */,
+				D9AE833727998F4C00B93D27 /* lightshader.fs */,
+				D9AE83392799B5BE00B93D27 /* gshader.vs */,
+				D9AE833A2799B5CD00B93D27 /* gshader.fs */,
+			);
+			path = BasicLighting;
+			sourceTree = "<group>";
+		};
 		D9D2DAE9278F213400635C83 /* triangle */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +412,7 @@
 				D9D2DB542791AC7100635C83 /* Coordinate_System */,
 				D9D2DB672792E09800635C83 /* Camera */,
 				D9D2DB7B2796FA1300635C83 /* Color */,
+				D9AE832A27998E3B00B93D27 /* BasicLighting */,
 				D9F97C90278C7699004BF785 /* Products */,
 				D9F97C99278C7966004BF785 /* Frameworks */,
 			);
@@ -382,6 +429,7 @@
 				D9D2DB532791AC7100635C83 /* Coordinate_System */,
 				D9D2DB662792E09800635C83 /* Camera */,
 				D9D2DB7A2796FA1300635C83 /* Color */,
+				D9AE832927998E3B00B93D27 /* BasicLighting */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,6 +456,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D9AE832827998E3B00B93D27 /* BasicLighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9AE832D27998E3B00B93D27 /* Build configuration list for PBXNativeTarget "BasicLighting" */;
+			buildPhases = (
+				D9AE832527998E3B00B93D27 /* Sources */,
+				D9AE832627998E3B00B93D27 /* Frameworks */,
+				D9AE832727998E3B00B93D27 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicLighting;
+			productName = BasicLighting;
+			productReference = D9AE832927998E3B00B93D27 /* BasicLighting */;
+			productType = "com.apple.product-type.tool";
+		};
 		D9D2DAE7278F213400635C83 /* triangle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9D2DAEC278F213400635C83 /* Build configuration list for PBXNativeTarget "triangle" */;
@@ -556,6 +621,9 @@
 				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					D9AE832827998E3B00B93D27 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					D9D2DAE7278F213400635C83 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -603,11 +671,23 @@
 				D9D2DB522791AC7100635C83 /* Coordinate_System */,
 				D9D2DB652792E09800635C83 /* Camera */,
 				D9D2DB792796FA1300635C83 /* Color */,
+				D9AE832827998E3B00B93D27 /* BasicLighting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D9AE832527998E3B00B93D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AE833427998F0400B93D27 /* Camera.h in Sources */,
+				D9AE833327998EFD00B93D27 /* Shader.cpp in Sources */,
+				D9AE833227998E8700B93D27 /* glad.c in Sources */,
+				D9AE832C27998E3B00B93D27 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9D2DAE4278F213400635C83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -699,6 +779,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D9AE832E27998E3B00B93D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.6/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9AE832F27998E3B00B93D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.6/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D9D2DAED278F213400635C83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1015,6 +1121,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D9AE832D27998E3B00B93D27 /* Build configuration list for PBXNativeTarget "BasicLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9AE832E27998E3B00B93D27 /* Debug */,
+				D9AE832F27998E3B00B93D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D9D2DAEC278F213400635C83 /* Build configuration list for PBXNativeTarget "triangle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
